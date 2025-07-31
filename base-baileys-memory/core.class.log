@@ -1,12 +1,27 @@
 [handleMsg]:  {
   key: {
-    remoteJid: '5214811028118@s.whatsapp.net',
+    remoteJid: '5214811539541@s.whatsapp.net',
     fromMe: false,
-    id: '3ABE57BCE7FE22FDB8AB',
+    id: '3ADAF28762FA1F324C32',
     participant: undefined
   },
-  messageTimestamp: 1752314753,
-  pushName: 'Barajas',
+  messageTimestamp: 1753952262,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  messageStubType: 2,
+  messageStubParameters: [ 'Message absent from node' ],
+  body: undefined,
+  from: '5214811539541'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3ADAF28762FA1F324C32',
+    participant: undefined
+  },
+  messageTimestamp: 1753952262,
+  pushName: 'Café Seroga',
   broadcast: false,
   message: Message {
     conversation: 'Hola',
@@ -16,41 +31,37 @@
       messageSecret: [Uint8Array]
     }
   },
+  verifiedBizName: 'Café Seroga',
   body: 'Hola',
-  from: '5214811028118'
+  from: '5214811539541'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_1225905a-6ede-40ab-befb-bda26fd1ae0e',
-  keyword: 'key_b04aa6c0-e044-4dbe-91e7-f50f44f08bea',
-  answer: '¡Hola de nuevo! 👋 Aquí está el menú principal:\n' +
-    '1️⃣ Precios de café 💰\n' +
-    '2️⃣ Información de cada café 📜\n' +
-    '3️⃣ Información de pedidos y envíos 🚚\n' +
-    '4️⃣ Hacer mi pedido 🛒\n' +
-    '5️⃣ Ubicación de Café SEROGA 📍\n',
+  ref: 'ans_1ebfb899-07a6-444d-9a42-95682557f279',
+  keyword: 'key_4d9975bc-fc97-407e-9ea8-699cb9c59cc5',
+  answer: '__call_action__',
   options: {
     media: null,
     buttons: [],
     capture: false,
     child: null,
-    delay: 100,
+    delay: 0,
     idle: null,
     ref: null,
     nested: [],
     keyword: {},
-    callback: false
+    callback: true
   },
-  refSerialize: '87a1bfd1eaf456098b50d9a956f5ebaa'
+  refSerialize: 'e054d0e49339d37c8367ccb7c5d58f02'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '5214811028118@s.whatsapp.net',
+    remoteJid: '5214811539541@s.whatsapp.net',
     fromMe: false,
-    id: '3A56D247DE88BA94CB81',
+    id: '3ADE00B2444158ECAC67',
     participant: undefined
   },
-  messageTimestamp: 1752314757,
-  pushName: 'Barajas',
+  messageTimestamp: 1753952273,
+  pushName: 'Café Seroga',
   broadcast: false,
   message: Message {
     conversation: '1',
@@ -60,29 +71,18 @@
       messageSecret: [Uint8Array]
     }
   },
+  verifiedBizName: 'Café Seroga',
   body: '1',
-  from: '5214811028118'
+  from: '5214811539541'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_8d6ea2e8-36f3-49f7-8b0b-00b5e5a9c63b',
-  keyword: 'key_cccb45ff-ca62-4ef0-bc64-d88e59e20c11',
-  answer: 'Aquí tienes los precios por kilo de nuestras variedades de café:\n' +
-    '• Caracolillo: $400\n' +
-    '• Supremo:    $400\n' +
-    '• Mezcla DJ:  $400\n' +
-    '• Planchuela: $400\n' +
-    '• Descafeinado: $435\n' +
-    '• Oscuro:      $355\n' +
-    '• Huasteco:    $330\n' +
-    '• Xilitla:     $330\n' +
-    '• Crudo:       $230\n' +
+  ref: 'ans_b3015ecb-0583-48fd-8b82-4b0d5ed9ddeb',
+  keyword: 'key_1193df66-3117-460a-8606-4d6d62945552',
+  answer: '📋 _Menú de Cafetería SEROGA:_  \n' +
+    'Consulta nuestro menú actualizado con precios aquí:  \n' +
+    '📲 https://drive.google.com/file/d/1Y6i5S0LNYWFvNVUss9qeeexdVO5fs6X-/view?usp=sharing\n' +
     '\n' +
-    'Presentaciones en paquete:\n' +
-    '• Bolsa 10/4: $750\n' +
-    '• Caja 20/4:  $1,500\n' +
-    '• …etc.\n' +
-    '\n' +
-    '🔙 Escribe “MENÚ” para volver.',
+    '🔙 Escribe *MENÚ* para regresar.',
   options: {
     media: null,
     buttons: [],
@@ -95,17 +95,17 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '77293db45c0fb2f1b53bdafd315141f1'
+  refSerialize: 'aab16a5d883fa755c201874ff8e8c736'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '5214811028118@s.whatsapp.net',
+    remoteJid: '5214811539541@s.whatsapp.net',
     fromMe: false,
-    id: '3AFBC20F3C3D85A20734',
+    id: '3A7259CB4A4A47C00EA1',
     participant: undefined
   },
-  messageTimestamp: 1752314761,
-  pushName: 'Barajas',
+  messageTimestamp: 1753952278,
+  pushName: 'Café Seroga',
   broadcast: false,
   message: Message {
     conversation: 'Menú',
@@ -115,29 +115,1163 @@
       messageSecret: [Uint8Array]
     }
   },
+  verifiedBizName: 'Café Seroga',
   body: 'Menú',
-  from: '5214811028118'
+  from: '5214811539541'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_1225905a-6ede-40ab-befb-bda26fd1ae0e',
-  keyword: 'key_b04aa6c0-e044-4dbe-91e7-f50f44f08bea',
-  answer: '¡Hola de nuevo! 👋 Aquí está el menú principal:\n' +
-    '1️⃣ Precios de café 💰\n' +
-    '2️⃣ Información de cada café 📜\n' +
-    '3️⃣ Información de pedidos y envíos 🚚\n' +
-    '4️⃣ Hacer mi pedido 🛒\n' +
-    '5️⃣ Ubicación de Café SEROGA 📍\n',
+  ref: 'ans_4d53b2a2-6015-4729-9f95-9c811d1a18f6',
+  keyword: 'key_ff1a8481-51cd-45f7-838a-b538ca2d3a2a',
+  answer: ' ☕ ¡Hola! Bienvenido a la Cafetería SEROGA 🍰  \n' +
+    'El auténtico sabor de la Huasteca en cada bebida y antojo. \n' +
+    '\n' +
+    'Selecciona una opción escribiendo *solamente* el número:\n' +
+    '\n' +
+    '1️⃣ Ver menú de Cafeteria 📋  \n' +
+    '2️⃣ Horarios de atención 🕘  \n' +
+    '3️⃣ ¿Dónde nos encontramos? 📍  \n' +
+    '4️⃣ Realizar un pedido 🚗  \n' +
+    '5️⃣ Sucursales y expendios 🏪  \n' +
+    '6️⃣ Quiero dejar una queja o comentario 📩  \n' +
+    '7️⃣ Problema con factura o asistencia 📄  \n' +
+    '8️⃣ Promociones y eventos especiales 🎉\n' +
+    '9️⃣ Ninguna de las anteriores ❓\n' +
+    '🔟 Numero de contacto De Sucursales\n' +
+    '\n' +
+    '\n' +
+    'Escribe *MENÚ* para volver a este listado.',
   options: {
     media: null,
     buttons: [],
     capture: false,
     child: null,
-    delay: 100,
+    delay: 0,
     idle: null,
     ref: null,
     nested: [],
     keyword: {},
     callback: false
   },
-  refSerialize: '87a1bfd1eaf456098b50d9a956f5ebaa'
+  refSerialize: '22508107bb2126d645d57001bdc66d36'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3A66B547370BAE2C2DDB',
+    participant: undefined
+  },
+  messageTimestamp: 1753952289,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: '1',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b3015ecb-0583-48fd-8b82-4b0d5ed9ddeb',
+  keyword: 'key_1193df66-3117-460a-8606-4d6d62945552',
+  answer: '📋 _Menú de Cafetería SEROGA:_  \n' +
+    'Consulta nuestro menú actualizado con precios aquí:  \n' +
+    '📲 https://drive.google.com/file/d/1Y6i5S0LNYWFvNVUss9qeeexdVO5fs6X-/view?usp=sharing\n' +
+    '\n' +
+    '🔙 Escribe *MENÚ* para regresar.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'aab16a5d883fa755c201874ff8e8c736'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3AD074F85F2B9C303B3A',
+    participant: undefined
+  },
+  messageTimestamp: 1753952293,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: '1',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b3015ecb-0583-48fd-8b82-4b0d5ed9ddeb',
+  keyword: 'key_1193df66-3117-460a-8606-4d6d62945552',
+  answer: '📋 _Menú de Cafetería SEROGA:_  \n' +
+    'Consulta nuestro menú actualizado con precios aquí:  \n' +
+    '📲 https://drive.google.com/file/d/1Y6i5S0LNYWFvNVUss9qeeexdVO5fs6X-/view?usp=sharing\n' +
+    '\n' +
+    '🔙 Escribe *MENÚ* para regresar.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'aab16a5d883fa755c201874ff8e8c736'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3AABD137CF0974A52DBC',
+    participant: undefined
+  },
+  messageTimestamp: 1753952296,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: '10',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: '10',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_3be3f234-98c9-43f8-810c-a976a096818c',
+  keyword: 'key_ad7102b2-e3b8-418a-b23c-f6b540f34098',
+  answer: '📞 *Información de contacto por sucursal* 📞\n' +
+    '¿Quieres comunicarte directamente con alguno de nuestros puntos? Aquí te dejamos los números:\n' +
+    '\n' +
+    '☕ Cafetería (Plaza Bugambilias)  \n' +
+    '📲 481 119 2380\n' +
+    '\n' +
+    '🍽️ Restaurante (Plaza 979)  \n' +
+    '\n' +
+    '📲 481 145 3203\n' +
+    '\n' +
+    '☕ Expendio Plaza 979  \n' +
+    '📲 481 107 1673\n' +
+    '\n' +
+    '☕ Expendio Plaza Bugambilias  \n' +
+    '📲 481 120 1783\n' +
+    '\n' +
+    '📝 Estamos para ayudarte con gusto en cualquiera de nuestras sucursales.  \n' +
+    '🔙 Escribe *MENÚ* para regresar al inicio.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'be4f4ff7dca6ea6ae7dc7a9ada23e905'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3AA8A5612B7B95222EC4',
+    participant: undefined
+  },
+  messageTimestamp: 1753952301,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: 'Menú',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: 'Menú',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_4d53b2a2-6015-4729-9f95-9c811d1a18f6',
+  keyword: 'key_ff1a8481-51cd-45f7-838a-b538ca2d3a2a',
+  answer: ' ☕ ¡Hola! Bienvenido a la Cafetería SEROGA 🍰  \n' +
+    'El auténtico sabor de la Huasteca en cada bebida y antojo. \n' +
+    '\n' +
+    'Selecciona una opción escribiendo *solamente* el número:\n' +
+    '\n' +
+    '1️⃣ Ver menú de Cafeteria 📋  \n' +
+    '2️⃣ Horarios de atención 🕘  \n' +
+    '3️⃣ ¿Dónde nos encontramos? 📍  \n' +
+    '4️⃣ Realizar un pedido 🚗  \n' +
+    '5️⃣ Sucursales y expendios 🏪  \n' +
+    '6️⃣ Quiero dejar una queja o comentario 📩  \n' +
+    '7️⃣ Problema con factura o asistencia 📄  \n' +
+    '8️⃣ Promociones y eventos especiales 🎉\n' +
+    '9️⃣ Ninguna de las anteriores ❓\n' +
+    '🔟 Numero de contacto De Sucursales\n' +
+    '\n' +
+    '\n' +
+    'Escribe *MENÚ* para volver a este listado.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '22508107bb2126d645d57001bdc66d36'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3AAA357F0B21C849CADA',
+    participant: undefined
+  },
+  messageTimestamp: 1753952309,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: '1',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b3015ecb-0583-48fd-8b82-4b0d5ed9ddeb',
+  keyword: 'key_1193df66-3117-460a-8606-4d6d62945552',
+  answer: '📋 _Menú de Cafetería SEROGA:_  \n' +
+    'Consulta nuestro menú actualizado con precios aquí:  \n' +
+    '📲 https://drive.google.com/file/d/1Y6i5S0LNYWFvNVUss9qeeexdVO5fs6X-/view?usp=sharing\n' +
+    '\n' +
+    '🔙 Escribe *MENÚ* para regresar.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'aab16a5d883fa755c201874ff8e8c736'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3A0E595BFE0E1F3807F4',
+    participant: undefined
+  },
+  messageTimestamp: 1753952318,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: 'Menú',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: 'Menú',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_4d53b2a2-6015-4729-9f95-9c811d1a18f6',
+  keyword: 'key_ff1a8481-51cd-45f7-838a-b538ca2d3a2a',
+  answer: ' ☕ ¡Hola! Bienvenido a la Cafetería SEROGA 🍰  \n' +
+    'El auténtico sabor de la Huasteca en cada bebida y antojo. \n' +
+    '\n' +
+    'Selecciona una opción escribiendo *solamente* el número:\n' +
+    '\n' +
+    '1️⃣ Ver menú de Cafeteria 📋  \n' +
+    '2️⃣ Horarios de atención 🕘  \n' +
+    '3️⃣ ¿Dónde nos encontramos? 📍  \n' +
+    '4️⃣ Realizar un pedido 🚗  \n' +
+    '5️⃣ Sucursales y expendios 🏪  \n' +
+    '6️⃣ Quiero dejar una queja o comentario 📩  \n' +
+    '7️⃣ Problema con factura o asistencia 📄  \n' +
+    '8️⃣ Promociones y eventos especiales 🎉\n' +
+    '9️⃣ Ninguna de las anteriores ❓\n' +
+    '🔟 Numero de contacto De Sucursales\n' +
+    '\n' +
+    '\n' +
+    'Escribe *MENÚ* para volver a este listado.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '22508107bb2126d645d57001bdc66d36'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3A5ADBE6122022214517',
+    participant: undefined
+  },
+  messageTimestamp: 1753952324,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: '2',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: '2',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_209e0951-3f22-4496-8cdf-9c76d766f253',
+  keyword: 'key_69b6e425-c63f-4f6b-96d2-e79cf326a0a6',
+  answer: '☕ Cafetería \n' +
+    '📍 Plaza Bugambilias, Blvd. México-Laredo #933\n' +
+    '🕒 Horario: L-S: 7 am - 10 pm | Dom: 8 am - 10 pm',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '09165d735661b1d3f6ed2367f78708cb'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3A41D39E79F9547F1950',
+    participant: undefined
+  },
+  messageTimestamp: 1753952335,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: 'Menú',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: 'Menú',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_4d53b2a2-6015-4729-9f95-9c811d1a18f6',
+  keyword: 'key_ff1a8481-51cd-45f7-838a-b538ca2d3a2a',
+  answer: ' ☕ ¡Hola! Bienvenido a la Cafetería SEROGA 🍰  \n' +
+    'El auténtico sabor de la Huasteca en cada bebida y antojo. \n' +
+    '\n' +
+    'Selecciona una opción escribiendo *solamente* el número:\n' +
+    '\n' +
+    '1️⃣ Ver menú de Cafeteria 📋  \n' +
+    '2️⃣ Horarios de atención 🕘  \n' +
+    '3️⃣ ¿Dónde nos encontramos? 📍  \n' +
+    '4️⃣ Realizar un pedido 🚗  \n' +
+    '5️⃣ Sucursales y expendios 🏪  \n' +
+    '6️⃣ Quiero dejar una queja o comentario 📩  \n' +
+    '7️⃣ Problema con factura o asistencia 📄  \n' +
+    '8️⃣ Promociones y eventos especiales 🎉\n' +
+    '9️⃣ Ninguna de las anteriores ❓\n' +
+    '🔟 Numero de contacto De Sucursales\n' +
+    '\n' +
+    '\n' +
+    'Escribe *MENÚ* para volver a este listado.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '22508107bb2126d645d57001bdc66d36'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3A47F49EE4EC42548052',
+    participant: undefined
+  },
+  messageTimestamp: 1753952342,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: '3',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: '3',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_ac106109-9683-42b2-9f95-3051a7b5a0a9',
+  keyword: 'key_8a058407-0169-49ae-92db-11e01ba96f53',
+  answer: '☕ Cafetería:\n' +
+    '📍 Plaza Bugambilias, Blvd. México-Laredo #933\n' +
+    '\n' +
+    '🔙 Escribe *MENÚ* para regresar.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'f55d40d729be5c50328db5b56f744119'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3A1B53ED5058A24CF365',
+    participant: undefined
+  },
+  messageTimestamp: 1753952390,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: 'Menú',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: 'Menú',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_4d53b2a2-6015-4729-9f95-9c811d1a18f6',
+  keyword: 'key_ff1a8481-51cd-45f7-838a-b538ca2d3a2a',
+  answer: ' ☕ ¡Hola! Bienvenido a la Cafetería SEROGA 🍰  \n' +
+    'El auténtico sabor de la Huasteca en cada bebida y antojo. \n' +
+    '\n' +
+    'Selecciona una opción escribiendo *solamente* el número:\n' +
+    '\n' +
+    '1️⃣ Ver menú de Cafeteria 📋  \n' +
+    '2️⃣ Horarios de atención 🕘  \n' +
+    '3️⃣ ¿Dónde nos encontramos? 📍  \n' +
+    '4️⃣ Realizar un pedido 🚗  \n' +
+    '5️⃣ Sucursales y expendios 🏪  \n' +
+    '6️⃣ Quiero dejar una queja o comentario 📩  \n' +
+    '7️⃣ Problema con factura o asistencia 📄  \n' +
+    '8️⃣ Promociones y eventos especiales 🎉\n' +
+    '9️⃣ Ninguna de las anteriores ❓\n' +
+    '🔟 Numero de contacto De Sucursales\n' +
+    '\n' +
+    '\n' +
+    'Escribe *MENÚ* para volver a este listado.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '22508107bb2126d645d57001bdc66d36'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3A99ED020C84C806E40A',
+    participant: undefined
+  },
+  messageTimestamp: 1753952395,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: '4',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: '4',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_abe946e6-3904-4c4c-8f81-a48d77885a4b',
+  keyword: 'key_d8888265-ec58-41d4-b7dc-ed170336f884',
+  answer: '🚗 ¿Quieres pedir algo delicioso?  \n' +
+    'Puedes hacerlo fácilmente por estas opciones:\n' +
+    '\n' +
+    '🛵 Uber Eats: Búscanos como “Cafetería Seroga”  \n' +
+    '🤝 Mandaditos: También puedes enviarlo con tu repartidor de confianza.\n' +
+    '\n' +
+    '¡Gracias por elegirnos!\n' +
+    '\n' +
+    '🔙 Escribe MENÚ para regresar.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '244f2287821fe2a194c5daa893cdad7a'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3A9B454BDDD0F3838C39',
+    participant: undefined
+  },
+  messageTimestamp: 1753952406,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: 'Menú',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: 'Menú',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_4d53b2a2-6015-4729-9f95-9c811d1a18f6',
+  keyword: 'key_ff1a8481-51cd-45f7-838a-b538ca2d3a2a',
+  answer: ' ☕ ¡Hola! Bienvenido a la Cafetería SEROGA 🍰  \n' +
+    'El auténtico sabor de la Huasteca en cada bebida y antojo. \n' +
+    '\n' +
+    'Selecciona una opción escribiendo *solamente* el número:\n' +
+    '\n' +
+    '1️⃣ Ver menú de Cafeteria 📋  \n' +
+    '2️⃣ Horarios de atención 🕘  \n' +
+    '3️⃣ ¿Dónde nos encontramos? 📍  \n' +
+    '4️⃣ Realizar un pedido 🚗  \n' +
+    '5️⃣ Sucursales y expendios 🏪  \n' +
+    '6️⃣ Quiero dejar una queja o comentario 📩  \n' +
+    '7️⃣ Problema con factura o asistencia 📄  \n' +
+    '8️⃣ Promociones y eventos especiales 🎉\n' +
+    '9️⃣ Ninguna de las anteriores ❓\n' +
+    '🔟 Numero de contacto De Sucursales\n' +
+    '\n' +
+    '\n' +
+    'Escribe *MENÚ* para volver a este listado.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '22508107bb2126d645d57001bdc66d36'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3A0E1BF080A3AFF786AF',
+    participant: undefined
+  },
+  messageTimestamp: 1753952411,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: '5',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: '5',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_93164178-e518-45df-9ce0-1e4348cf6302',
+  keyword: 'key_f72e0090-aaf1-417b-ae74-d08a947a4001',
+  answer: '📍 ¿Dónde puedes encontrarnos?\n' +
+    '\n' +
+    'Estos son nuestros puntos de venta oficiales en Ciudad Valles, SLP:\n' +
+    '\n' +
+    '🍽 Restaurante \n' +
+    '📍 Plaza 979, Blvd. México-Laredo (frente a Burger King)\n' +
+    '🕒 Horario: L-D: 7 am - 10:30 pm | \n' +
+    '☕ Expendio\n' +
+    '📍 Plaza 979, Blvd. México-Laredo (frente a Burger King)\n' +
+    '🕒 Horario: L-D: 7 am - 9 pm | \n' +
+    '☕ Cafetería \n' +
+    '📍 Plaza Bugambilias, Blvd. México-Laredo #933\n' +
+    '🕒 Horario: L-S: 7 am - 10 pm | Dom: 8 am - 10 pm\n' +
+    '☕ Expendio\n' +
+    '📍 Plaza Bugambilias, Blvd. México-Laredo #933\n' +
+    '🕒 Horario: L-S: 7 am - 10 pm | Dom: 8 am - 9 pm\n' +
+    '🏬 Matriz (Centro)\n' +
+    '📍 Mercado Municipal, Tramo #79, Zona Centro\n' +
+    '🕒 Horario: L-S: 8 am - 1 pm y 4 pm - 8 pm | Dom: 8 am - 3 pm\n' +
+    '(Martes cerrado)\n' +
+    '🔙 Escribe *MENÚ* para regresar.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'f4addda01c495df7208556e437bbbffd'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3A232FAB0001D14EE76D',
+    participant: undefined
+  },
+  messageTimestamp: 1753952422,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: 'Menú',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: 'Menú',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_4d53b2a2-6015-4729-9f95-9c811d1a18f6',
+  keyword: 'key_ff1a8481-51cd-45f7-838a-b538ca2d3a2a',
+  answer: ' ☕ ¡Hola! Bienvenido a la Cafetería SEROGA 🍰  \n' +
+    'El auténtico sabor de la Huasteca en cada bebida y antojo. \n' +
+    '\n' +
+    'Selecciona una opción escribiendo *solamente* el número:\n' +
+    '\n' +
+    '1️⃣ Ver menú de Cafeteria 📋  \n' +
+    '2️⃣ Horarios de atención 🕘  \n' +
+    '3️⃣ ¿Dónde nos encontramos? 📍  \n' +
+    '4️⃣ Realizar un pedido 🚗  \n' +
+    '5️⃣ Sucursales y expendios 🏪  \n' +
+    '6️⃣ Quiero dejar una queja o comentario 📩  \n' +
+    '7️⃣ Problema con factura o asistencia 📄  \n' +
+    '8️⃣ Promociones y eventos especiales 🎉\n' +
+    '9️⃣ Ninguna de las anteriores ❓\n' +
+    '🔟 Numero de contacto De Sucursales\n' +
+    '\n' +
+    '\n' +
+    'Escribe *MENÚ* para volver a este listado.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '22508107bb2126d645d57001bdc66d36'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3ADA6FA4F0561FC1BD15',
+    participant: undefined
+  },
+  messageTimestamp: 1753952429,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: '6',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: '6',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_3847e96e-8603-4338-8fd2-d820948df990',
+  keyword: 'key_3d35fc06-fd0d-48dd-89e7-34a85510789c',
+  answer: '✉ ¿Tuviste algún detalle en tu visita o pedido?  \n' +
+    'Cuéntanos a continuación para darte seguimiento y ayudarte lo antes posible. ¡Queremos seguir mejorando por ti! 😊\n' +
+    '\n' +
+    '🔙 Escribe MENÚ para regresar.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'b73aba889140d683cf73b84da1d298ef'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3AF9C4F4BA93C5183EAC',
+    participant: undefined
+  },
+  messageTimestamp: 1753952437,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: '7',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: '7',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_a1ebe683-ea5e-4abc-bd2a-b3fe07f72129',
+  keyword: 'key_43f55b85-be4c-49c8-8732-4b7321575a0d',
+  answer: '📄 ¿Tienes algún problema con tu factura?  \n' +
+    'Escríbenos en el siguiente mensaje detallando tu caso.\n' +
+    '\n' +
+    '⚠ Recuerda: Las facturas solo pueden emitirse el mismo día de la compra.  \n' +
+    'Gracias por tu comprensión.\n' +
+    '\n' +
+    '🔙 Escribe MENÚ para regresar.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '6ba5c9bb64122445b8f22e8897e01650'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3A141C8C31C8D82F53BB',
+    participant: undefined
+  },
+  messageTimestamp: 1753952446,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: 'Menú',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: 'Menú',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_4d53b2a2-6015-4729-9f95-9c811d1a18f6',
+  keyword: 'key_ff1a8481-51cd-45f7-838a-b538ca2d3a2a',
+  answer: ' ☕ ¡Hola! Bienvenido a la Cafetería SEROGA 🍰  \n' +
+    'El auténtico sabor de la Huasteca en cada bebida y antojo. \n' +
+    '\n' +
+    'Selecciona una opción escribiendo *solamente* el número:\n' +
+    '\n' +
+    '1️⃣ Ver menú de Cafeteria 📋  \n' +
+    '2️⃣ Horarios de atención 🕘  \n' +
+    '3️⃣ ¿Dónde nos encontramos? 📍  \n' +
+    '4️⃣ Realizar un pedido 🚗  \n' +
+    '5️⃣ Sucursales y expendios 🏪  \n' +
+    '6️⃣ Quiero dejar una queja o comentario 📩  \n' +
+    '7️⃣ Problema con factura o asistencia 📄  \n' +
+    '8️⃣ Promociones y eventos especiales 🎉\n' +
+    '9️⃣ Ninguna de las anteriores ❓\n' +
+    '🔟 Numero de contacto De Sucursales\n' +
+    '\n' +
+    '\n' +
+    'Escribe *MENÚ* para volver a este listado.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '22508107bb2126d645d57001bdc66d36'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3A0F5D086B6EFE6FE991',
+    participant: undefined
+  },
+  messageTimestamp: 1753952450,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: '8',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: '8',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b51341d7-d15c-40e0-8ac6-b2d01510cba3',
+  keyword: 'key_09d562e2-5f64-417d-826f-ac699130d890',
+  answer: '🎉 Promociones y eventos especiales  \n' +
+    '¡Gracias por seguir nuestras novedades!  \n' +
+    'Aquí anunciamos promociones como música en vivo, descuentos o regalos especiales. 🪗🎁\n' +
+    '\n' +
+    '📲 Te recomendamos seguirnos en Facebook para estar al día:  \n' +
+    'https://www.facebook.com/CafeSeroga\n' +
+    '\n' +
+    '🔙 Escribe MENÚ para regresar.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '7eea5c0f70de850895a492c58f2fabd8'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3A30996D4FE2DBA5A00C',
+    participant: undefined
+  },
+  messageTimestamp: 1753952457,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: 'Menú',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: 'Menú',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_4d53b2a2-6015-4729-9f95-9c811d1a18f6',
+  keyword: 'key_ff1a8481-51cd-45f7-838a-b538ca2d3a2a',
+  answer: ' ☕ ¡Hola! Bienvenido a la Cafetería SEROGA 🍰  \n' +
+    'El auténtico sabor de la Huasteca en cada bebida y antojo. \n' +
+    '\n' +
+    'Selecciona una opción escribiendo *solamente* el número:\n' +
+    '\n' +
+    '1️⃣ Ver menú de Cafeteria 📋  \n' +
+    '2️⃣ Horarios de atención 🕘  \n' +
+    '3️⃣ ¿Dónde nos encontramos? 📍  \n' +
+    '4️⃣ Realizar un pedido 🚗  \n' +
+    '5️⃣ Sucursales y expendios 🏪  \n' +
+    '6️⃣ Quiero dejar una queja o comentario 📩  \n' +
+    '7️⃣ Problema con factura o asistencia 📄  \n' +
+    '8️⃣ Promociones y eventos especiales 🎉\n' +
+    '9️⃣ Ninguna de las anteriores ❓\n' +
+    '🔟 Numero de contacto De Sucursales\n' +
+    '\n' +
+    '\n' +
+    'Escribe *MENÚ* para volver a este listado.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '22508107bb2126d645d57001bdc66d36'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3AB44057296B2D1D33D9',
+    participant: undefined
+  },
+  messageTimestamp: 1753952461,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: '8',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: '8',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b51341d7-d15c-40e0-8ac6-b2d01510cba3',
+  keyword: 'key_09d562e2-5f64-417d-826f-ac699130d890',
+  answer: '🎉 Promociones y eventos especiales  \n' +
+    '¡Gracias por seguir nuestras novedades!  \n' +
+    'Aquí anunciamos promociones como música en vivo, descuentos o regalos especiales. 🪗🎁\n' +
+    '\n' +
+    '📲 Te recomendamos seguirnos en Facebook para estar al día:  \n' +
+    'https://www.facebook.com/CafeSeroga\n' +
+    '\n' +
+    '🔙 Escribe MENÚ para regresar.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '7eea5c0f70de850895a492c58f2fabd8'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3A392822CB90D00F210F',
+    participant: undefined
+  },
+  messageTimestamp: 1753952465,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: '9',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: '9',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_0ef0553b-d9f4-49a4-a346-25e4e980c5d0',
+  keyword: 'key_59b7846d-04b3-4beb-9e57-8dccadda051a',
+  answer: '❓ _Ninguna de las anteriores_  \n' +
+    'Por favor describe lo que nos quieres decir o tu problema y en un momento te atenderemos. 😊\n' +
+    '\n' +
+    '🔙 Escribe *MENÚ* para regresar.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '473c8f797508dc7ce616f162ab1c4518'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214811539541@s.whatsapp.net',
+    fromMe: false,
+    id: '3A0267E3E9E4EE589BBC',
+    participant: undefined
+  },
+  messageTimestamp: 1753952474,
+  pushName: 'Café Seroga',
+  broadcast: false,
+  message: Message {
+    conversation: '10',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'Café Seroga',
+  body: '10',
+  from: '5214811539541'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_3be3f234-98c9-43f8-810c-a976a096818c',
+  keyword: 'key_ad7102b2-e3b8-418a-b23c-f6b540f34098',
+  answer: '📞 *Información de contacto por sucursal* 📞\n' +
+    '¿Quieres comunicarte directamente con alguno de nuestros puntos? Aquí te dejamos los números:\n' +
+    '\n' +
+    '☕ Cafetería (Plaza Bugambilias)  \n' +
+    '📲 481 119 2380\n' +
+    '\n' +
+    '🍽️ Restaurante (Plaza 979)  \n' +
+    '\n' +
+    '📲 481 145 3203\n' +
+    '\n' +
+    '☕ Expendio Plaza 979  \n' +
+    '📲 481 107 1673\n' +
+    '\n' +
+    '☕ Expendio Plaza Bugambilias  \n' +
+    '📲 481 120 1783\n' +
+    '\n' +
+    '📝 Estamos para ayudarte con gusto en cualquiera de nuestras sucursales.  \n' +
+    '🔙 Escribe *MENÚ* para regresar al inicio.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'be4f4ff7dca6ea6ae7dc7a9ada23e905'
 }

@@ -12,32 +12,34 @@ const QRPortalWeb = require('@bot-whatsapp/portal');
 const BaileysProvider = require('@bot-whatsapp/provider/baileys');
 const MongoAdapter = require('@bot-whatsapp/database/mongo');
 
+
 // ================= CONST DE TELÉFONOS =================
 const PHONE_CAFETERIA_PB    = '481 119 2380';  // Cafetería (Plaza Bugambilias)
 const PHONE_RESTAURANTE_979 = '481 145 3203';  // Restaurante (Plaza 979)
 const PHONE_EXP_979         = '481 107 1673';  // Expendio Plaza 979
 const PHONE_EXP_BUG         = '481 120 1783';  // Expendio Plaza Bugambilias
 
+
+// ================= FLUJO DE BIENVENIDA =================
 const flowWelcome = addKeyword(EVENTS.WELCOME).addAnswer(
-  `¡Hola! 😊 Bienvenido a Café SEROGA☕
-¡Es un gusto atenderte desde nuestra sucursal del centro . Por favor, elige la opción que mejor se adapte a lo que necesitas:
+  `☕ ¡Hola! Bienvenido a la Cafetería SEROGA 🍰  
+El auténtico sabor de la Huasteca en cada bebida y antojo. 
 
-Por favor escribe solo el número de la opción que te interesa (por ejemplo: 1)
+Selecciona una opción escribiendo *solamente* el número:
 
-📋 ¿Qué deseas consultar?
-1️⃣ Ver precios del café
-2️⃣ Conocer nuestras variedades de café
-3️⃣ Información sobre pedidos y envíos
-4️⃣ Número para hacer un pedido de Café SEROGA a toda la República  
-5️⃣ ¿Dónde se encuentra Café SEROGA?
-6️⃣ Numero de contacto De Sucursales
-7️⃣ Quejas y aclaraciones
-8️⃣ 👤 Hablar con personal 
+1️⃣ Ver menú de Cafeteria 📋  
+2️⃣ Horarios de atención 🕘  
+3️⃣ ¿Dónde nos encontramos? 📍  
+4️⃣ Realizar un pedido 🚗  
+5️⃣ Sucursales y expendios 🏪  
+6️⃣ Quiero dejar una queja o comentario 📩  
+7️⃣ Problema con factura o asistencia 📄  
+8️⃣ Promociones y eventos especiales 🎉
+9️⃣ Ninguna de las anteriores ❓
+🔟 Numero de contacto De Sucursales
 
-🛒 También puedes pedir desde nuestro perfil en Mercado Libre:
-https://listado.mercadolibre.com.mx/_CustId_1938105423
 
-🔁 Puedes escribir “MENÚ” en cualquier momento para regresar a este listado. `
+Escribe *MENÚ* para volver a este listado.`
 );
 
 // ================= FLUJO MENÚ =================
@@ -45,119 +47,75 @@ const flowMenu = addKeyword(
   [/^\s*(?:menu|menú)\s*$/i],
   { regex: true }
 ).addAnswer(
-  `¡Hola! 😊 Bienvenido a Café SEROGA☕
-¡Es un gusto atenderte desde nuestra sucursal del centro . Por favor, elige la opción que mejor se adapte a lo que necesitas:
-Por favor escribe solo el número de la opción que te interesa (por ejemplo: 1)
+  ` ☕ ¡Hola! Bienvenido a la Cafetería SEROGA 🍰  
+El auténtico sabor de la Huasteca en cada bebida y antojo. 
 
- Aquí está el menú nuevamente:
+Selecciona una opción escribiendo *solamente* el número:
 
-📋 ¿Qué deseas consultar?
+1️⃣ Ver menú de Cafeteria 📋  
+2️⃣ Horarios de atención 🕘  
+3️⃣ ¿Dónde nos encontramos? 📍  
+4️⃣ Realizar un pedido 🚗  
+5️⃣ Sucursales y expendios 🏪  
+6️⃣ Quiero dejar una queja o comentario 📩  
+7️⃣ Problema con factura o asistencia 📄  
+8️⃣ Promociones y eventos especiales 🎉
+9️⃣ Ninguna de las anteriores ❓
+🔟 Numero de contacto De Sucursales
 
-1️⃣ Ver precios del café.
-2️⃣ Conocer nuestras variedades de café.
-3️⃣ Información sobre pedidos y envíos.
-4️⃣ Número para hacer un pedido de Café SEROGA a toda la República. 
-5️⃣ ¿Dónde se encuentra Café SEROGA?
-6️⃣ Numero de contacto De Sucursales.
-7️⃣ Quejas y aclaraciones.
-8️⃣ 👤 Hablar con personal.
 
-
-🛒 También puedes pedir desde nuestro perfil en Mercado Libre:
-https://listado.mercadolibre.com.mx/_CustId_1938105423
-
-🔁 Puedes escribir “MENÚ” en cualquier momento para regresar a este listado.
-`
+Escribe *MENÚ* para volver a este listado.`
 );
 
 // ================= FLUJOS NUMÉRICOS =================
-const flowPrecios = addKeyword([/^\s*1\s*$/], { regex: true }).addAnswer(
-  `☕ Precios actualizados de nuestros cafés SEROGA
-¡Elige tu favorito y haz tu pedido con confianza!
+const flowVerMenu = addKeyword(
+  [/^\s*1\s*$/],
+  { regex: true }
+).addAnswer(
+  `📋 _Menú de Cafetería SEROGA:_  
+Consulta nuestro menú actualizado con precios aquí:  
+📲 https://drive.google.com/file/d/1Y6i5S0LNYWFvNVUss9qeeexdVO5fs6X-/view?usp=sharing
 
-📦 Precio por kilo:
-• Caracolillo: $400
-• Supremo (mezcla Caracolillo y Planchuela): $400
-• Mezcla Don Juan: $400
-• Planchuela: $400
-• Descafeinado: $435
-• Oscuro: $355
-• Huasteco: $330
-• Xilitla: $330
-
-📦 Presentaciones por paquete:
-• Bolsa 10/4 (10 bolsas de 250 g): $750
-• Caja 20/4 (20 bolsas de 250 g): $1,500
-• Caja 10/2 (10 bolsas de 500 g): $1,500
-• Caja 50B (50 sobres de 50 g): $860
-• Bolsa 25B (25 sobres de 50 g): $430
-
-💡 Si necesitas recomendación según el sabor que te gusta, vuelve al menú y elige la opción 2 para conocer nuestras variedades.
-
-🔙 Escribe MENÚ para regresar al menú principal.`
+🔙 Escribe *MENÚ* para regresar.`
 );
 
-const flowInfoCafe = addKeyword([/^\s*2\s*$/], { regex: true }).addAnswer(
-  `📜 Conoce nuestras variedades de café SEROGA
-Cada una tiene un perfil único de sabor y aroma, ¡descubre la que mejor se adapta a tu gusto! ☕
-
-• Caracolillo – Fuerte e intenso, con aroma profundo. Para quienes aman un café robusto.
-• Supremo – Mezcla equilibrada de Caracolillo y Planchuela (50/50). Sabor completo y redondo.
-• Mezcla Don Juan – Nuestra mezcla especial: Huasteco, Caracolillo, Planchuela y un toque de Oscuro. Compleja y balanceada.
-• Planchuela – Suave y con notas achocolatadas. Ideal si prefieres un café más ligero.
-• Descafeinado – Todo el sabor, sin cafeína. Perfecto para disfrutar en cualquier momento.
-• Oscuro – De tostado fuerte e intenso. Excelente para quienes disfrutan sabores más profundos.
-• Huasteco – Tradicional y aromático. Un café clásico que nunca falla.
-• Xilitla – Originario de la sierra. Aroma envolvente y sabor suave para todos los días.
-
-🔙 Escribe MENÚ para regresar al menú principal.`
+const flowHorarios = addKeyword(
+  [/^\s*2\s*$/],
+  { regex: true }
+).addAnswer(
+  `☕ Cafetería 
+📍 Plaza Bugambilias, Blvd. México-Laredo #933
+🕒 Horario: L-S: 7 am - 10 pm | Dom: 8 am - 10 pm
+🔙 Escribe *MENÚ* para regresar`
 );
 
-const flowPedidos = addKeyword([/^\s*3\s*$/], { regex: true }).addAnswer(
-  `🚚 Información sobre pedidos y envíos
+const flowUbicacion = addKeyword(
+  [/^\s*3\s*$/],
+  { regex: true }
+).addAnswer(
+  `☕ Cafetería:
+📍 Plaza Bugambilias, Blvd. México-Laredo #933
 
-¡Llevamos el auténtico sabor de la Huasteca Potosina hasta la puerta de tu casa! ☕📦
-
-📍 Envíos a todo México
-• Costo de envío: $300 pesos (hasta 5 kilos de café).
-• Si tu pedido supera los 5 kilos, el costo adicional es de $22 pesos por kilo extra.
-• Tiempo estimado de entrega: entre 2 a 5 días hábiles, según tu ubicación.
-
-💳 Formas de pago
-• Transferencia o depósito bancario (te damos los datos cuando confirmas tu pedido).
-• También puedes comprar por Mercado Libre si lo prefieres:
-👉 https://listado.mercadolibre.com.mx/_CustId_1938105423
-
-📝 ¿Cómo hacer tu pedido?
-	1.	Indica la variedad de café y cuántos kilos deseas.
-	2.	Proporciónanos tus datos completos:
-• Nombre completo
-• Dirección con código postal
-• Teléfono de contacto
-	3.	Te enviamos los datos de pago.
-	4.	Una vez validado el pago, preparamos tu pedido y te compartimos la guía de rastreo.
-
-📌 Tip: Puedes pedir desde 1 kilo en adelante. Te recomendamos aprovechar el envío pidiendo varios kilos. 😉
-
-✅ Para continuar con tu pedido, regresa al MENÚ y selecciona la opción 4. Ahí te daremos el número para pedidos de café a toda la República. 📞
-
-🔙 Escribe MENÚ para volver al menú principal.`
+🔙 Escribe *MENÚ* para regresar.`
 );
 
-const flowHacerPedido = addKeyword([/^\s*4\s*$/], { regex: true }).addAnswer(
-  `📲 Realizar un pedido
-Para hacer tu pedido, por favor envía un mensaje de WhatsApp al siguiente número:
-👉 +52 481 153 9541
-Ahí te atenderemos con gusto para tomar tu orden y darte toda la información que necesites.
+const flowPedido = addKeyword([/^\s*4\s*$/], { regex: true }).addAnswer(
+  `🚗 ¿Quieres pedir algo delicioso?  
+Puedes hacerlo fácilmente por estas opciones:
 
-🕒 Horario de atención:
-Todos los días de 7:00 am a 10 pm
+🛵 Uber Eats: Búscanos como “Cafetería Seroga”  
+🤝 Mandaditos: También puedes enviarlo con tu repartidor de confianza.
 
-🔙 Escribe MENÚ para regresar al listado principal.
-`
+¡Gracias por elegirnos!
+
+🔙 Escribe MENÚ para regresar.`
 );
 
-const flowUbicacion = addKeyword([/^\s*5\s*$/], { regex: true }).addAnswer(
+
+const flowSucursales = addKeyword(
+  [/^\s*5\s*$/],
+  { regex: true }
+).addAnswer(
   `📍 ¿Dónde puedes encontrarnos?
 
 Estos son nuestros puntos de venta oficiales en Ciudad Valles, SLP:
@@ -178,11 +136,49 @@ Estos son nuestros puntos de venta oficiales en Ciudad Valles, SLP:
 📍 Mercado Municipal, Tramo #79, Zona Centro
 🕒 Horario: L-S: 8 am - 1 pm y 4 pm - 8 pm | Dom: 8 am - 3 pm
 (Martes cerrado)
-🔙 Escribe MENÚ para volver al menú principal.`
+🔙 Escribe *MENÚ* para regresar.`
 );
 
-// ================= NUEVO: CONTACTO =================
-const flowContacto = addKeyword([/^\s*6\s*$/], { regex: true }).addAnswer(
+const flowQueja = addKeyword([/^\s*6\s*$/], { regex: true }).addAnswer(
+  `✉ ¿Tuviste algún detalle en tu visita o pedido?  
+Cuéntanos a continuación para darte seguimiento y ayudarte lo antes posible. ¡Queremos seguir mejorando por ti! 😊
+
+🔙 Escribe MENÚ para regresar.`
+);
+
+
+const flowFactura = addKeyword([/^\s*7\s*$/], { regex: true }).addAnswer(
+  `📄 ¿Tienes algún problema con tu factura?  
+Escríbenos en el siguiente mensaje detallando tu caso.
+
+⚠ Recuerda: Las facturas solo pueden emitirse el mismo día de la compra.  
+Gracias por tu comprensión.
+
+🔙 Escribe MENÚ para regresar.`
+);
+
+const flowPromociones = addKeyword(
+  [/^\s*8\s*$/],
+  { regex: true }
+).addAnswer(
+  `🎉 Promociones y eventos especiales  
+¡Gracias por seguir nuestras novedades!  
+Aquí anunciamos promociones como música en vivo, descuentos o regalos especiales. 🪗🎁
+
+📲 Te recomendamos seguirnos en Facebook para estar al día:  
+https://www.facebook.com/CafeSeroga
+
+🔙 Escribe MENÚ para regresar.`
+);
+
+const flowNinguna = addKeyword([/^\s*9\s*$/], { regex: true }).addAnswer(
+  `❓ _Ninguna de las anteriores_  
+Por favor describe lo que nos quieres decir o tu problema y en un momento te atenderemos. 😊
+
+🔙 Escribe *MENÚ* para regresar.`
+);
+
+const flowContacto = addKeyword([/^\s*10\s*$/], { regex: true }).addAnswer(
   `📞 *Información de contacto por sucursal* 📞
 ¿Quieres comunicarte directamente con alguno de nuestros puntos? Aquí te dejamos los números:
 
@@ -190,6 +186,7 @@ const flowContacto = addKeyword([/^\s*6\s*$/], { regex: true }).addAnswer(
 📲 ${PHONE_CAFETERIA_PB}
 
 🍽️ Restaurante (Plaza 979)  
+
 📲 ${PHONE_RESTAURANTE_979}
 
 ☕ Expendio Plaza 979  
@@ -202,35 +199,13 @@ const flowContacto = addKeyword([/^\s*6\s*$/], { regex: true }).addAnswer(
 🔙 Escribe *MENÚ* para regresar al inicio.`
 );
 
-// ================= NUEVO: QUEJAS/ACLARACIONES =================
-const flowQuejas = addKeyword([/^\s*7\s*$/], { regex: true }).addAnswer(
-  `  ✉ Quejas, comentarios o aclaraciones ✉
-
-En Café SEROGA nos importa tu experiencia.
-Si tienes alguna queja, sugerencia o comentario sobre tu compra, atención o pedido, puedes escribirnos tu mensaje aquí mismo. 📩
-
-Nuestro equipo lo revisará con atención y te daremos seguimiento lo antes posible.
-¡Gracias por ayudarnos a mejorar! 
-
-🔙 Escribe MENÚ para regresar al menú principal.    `
-);
-
-// ================= NUEVO: Personal =================
-const flowPersonal = addKeyword([/^\s*8\s*$/], { regex: true }).addAnswer(
-  `En Café SEROGA nos importa tu experiencia 🤝 ✉
-Si necesitas ayuda personalizada, aclarar alguna situación o simplemente quieres comunicarte con nuestro equipo, por favor escribe tu mensaje a continuación y con gusto te atenderemos lo antes posible.
-
-🔙 Escribe MENÚ para regresar al menú principal.    `
-);
-
 
 // ================= FLUJO IGNORAR =================
 const flowIgnorar = addKeyword(['']).addAction(async (ctx, { endFlow }) => {
-  const mensaje = ctx.body.toLowerCase().trim();
-  const comandosExactos = ['1','2','3','4','5','6','7','8'];
-  const comandosMenu    = ['menú','menu'];
-  
-  if (!comandosExactos.includes(mensaje) && !comandosMenu.includes(mensaje)) {
+  const msg = ctx.body.toLowerCase().trim();
+  const valid = ['1','2','3','4','5','6','7','menu','menú'];
+  if (!valid.includes(msg)) {
+    // termina el flujo sin responder, permitiendo conversación libre
     return endFlow();
   }
 });
@@ -239,27 +214,29 @@ const flowIgnorar = addKeyword(['']).addAction(async (ctx, { endFlow }) => {
 const main = async () => {
   const adapterDB = new MongoAdapter({
     dbUri: process.env.MONGO_DB_URI,
-    dbName: "cafe-seroga"
+    dbName: process.env.MONGO_DB_NAME
   });
 
-  const adapterFlow = createFlow([
+  const flow = createFlow([
     flowWelcome,
     flowMenu,
-    flowPrecios,
-    flowInfoCafe,
-    flowPedidos,
-    flowHacerPedido,
+    flowVerMenu,
+    flowHorarios,
     flowUbicacion,
+    flowPedido,
+    flowSucursales,
+    flowQueja,
+    flowFactura,
+    flowPromociones,
+    flowNinguna,
     flowContacto,
-    flowQuejas,
-    flowPersonal,
-    flowIgnorar
+    flowIgnorar   // debe ir al final
   ]);
 
   const adapterProvider = createProvider(BaileysProvider);
 
   createBot({
-    flow: adapterFlow,
+    flow,
     provider: adapterProvider,
     database: adapterDB
   });
