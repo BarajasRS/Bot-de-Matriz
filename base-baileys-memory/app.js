@@ -120,7 +120,6 @@ Puedes hacerlo fácilmente por estas opciones:
 - Tamaño y tipo de leche (entera, deslactosada, light)  
 - ¿Deseas leche de coco o almendra? (+13 $)  
 - ¿Café descafeinado? (+10 $)  
-- ¿Lechero o con algún jarabe? (especificar)
 
  Para frappés y helados:  
 - Todos los frappés llevan leche deslactosada  
@@ -170,11 +169,17 @@ Cuéntanos a continuación para darte seguimiento y ayudarte lo antes posible. �
 const flowFactura = addKeyword([/^\s*7\s*$/], { regex: true }).addAnswer(
   `📄 ¿Tienes algún problema con tu factura?  
 Escríbenos en el siguiente mensaje detallando tu caso.
+Necesitamos 
+•Constancia de situación fiscal 
+•Correo electrónico 
+•Tipo de pago, en caso de ser con tarjeta especificar débito o crédito 
+•Comprobante de la compra 
 
 ⚠ Recuerda: Las facturas solo pueden emitirse el mismo día de la compra.  
 Gracias por tu comprensión.
 
-🔙 Escribe MENÚ para regresar.`
+🔙 Escribe MENÚ para regresar.
+`
 );
 
 const flowPromociones = addKeyword(
