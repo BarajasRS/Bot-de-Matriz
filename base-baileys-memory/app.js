@@ -103,12 +103,32 @@ const flowPedido = addKeyword([/^\s*4\s*$/], { regex: true }).addAnswer(
   `🚗 ¿Quieres pedir algo delicioso?  
 Puedes hacerlo fácilmente por estas opciones:
 
-🛵 Uber Eats: Búscanos como “Cafetería Seroga”  
+🛵 Uber Eats: Búscanos como “Restaurante SEROGA”  
 🤝 Mandaditos: También puedes enviarlo con tu repartidor de confianza.
 
-¡Gracias por elegirnos!
+📌 Si deseas que preparemos tu pedido por este medio, por favor *indica claramente lo siguiente*:
 
-🔙 Escribe MENÚ para regresar.`
+🍽 Para alimentos:  
+- Nombre del platillo  
+- Cantidad  
+- Observaciones (por ejemplo: sin cebolla, extra salsa, etc.)
+(Si es otro platillo, especificar igualmente).
+
+☕ Para cafés:  
+- Tipo de café  
+- ¿Caliente o helado?  
+- Tamaño y tipo de leche (entera, deslactosada, light)  
+- ¿Deseas leche de coco o almendra? (+13 $)  
+- ¿Café descafeinado? (+10 $)  
+- ¿Lechero o con algún jarabe? (especificar)
+
+ Para frappés y helados:  
+- Todos los frappés llevan leche deslactosada  
+- ¿Quieres leche de coco o almendra? (+10 $)  
+- ¿Agregar tapiocas? (+5 $)
+
+🔁 Cuando termines tu pedido, te confirmaremos disponibilidad y tiempos.  
+🔙 Escribe MENÚ para regresar`
 );
 
 
